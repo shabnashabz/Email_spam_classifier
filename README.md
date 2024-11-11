@@ -30,12 +30,13 @@ email_classifier/
 
 ### Training the Model
 To train the model, run the following command:
+```
+       python train_model.py
+```
 
-  ```
-    python train_model.py
-  ```
+ 
 ## Running the Application
-     Once the model is trained and saved, you can run the application using:
+   Once the model is trained and saved, you can run the application using:
      ```
        python app.py
       ```
