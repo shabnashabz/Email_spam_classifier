@@ -1,8 +1,7 @@
 import os
 
 def create_spam_csv():
-    # Define the spam dataset
-    spam_data = '''v1,v2
+   spam_data = '''v1,v2
 ham,"Hi how are you? Hope you're having a great day!"
 spam,"CONGRATULATIONS! You've won a $1000 gift card! Click here to claim"
 ham,"Meeting at 3pm tomorrow in the conference room"
@@ -60,11 +59,9 @@ spam,"WIN a free vacation! Click here to enter"
 ham,"The client loved our proposal"
 spam,"URGENT: Your account will be closed. Act now"'''
 
-    # Create data directory if it doesn't exist
-    os.makedirs('data', exist_ok=True)
+   os.makedirs('data', exist_ok=True)
     
-    # Write the spam dataset to file
-    with open(os.path.join('data', 'spam.csv'), 'w', encoding='utf-8') as f:
+  with open(os.path.join('data', 'spam.csv'), 'w', encoding='utf-8') as f:
         f.write(spam_data)
     
     print("spam.csv file has been created in the data directory")
