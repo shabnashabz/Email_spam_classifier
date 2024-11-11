@@ -15,7 +15,7 @@ This is a Python GUI application built using Tkinter to classify emails as "spam
   ```
   pip install scikit-learn joblib pandas
 
-**Directory Structure**
+### Directory Structure
 The project structure should look like this:
 
 
@@ -28,23 +28,23 @@ email_classifier/
 └── train_model.py         # Model training file
 
 
-**Training the Model**
+### Training the Model
 To train the model, run the following command:
 
   ```
     python train_model.py
   ```
-Running the Application
+## Running the Application
      Once the model is trained and saved, you can run the application using:
      ```
        python app.py
       ```
-**How It Works**
+## How It Works
 The application uses a Naive Bayes model trained on the UCI spam dataset.
 The train_model.py script loads, trains, and saves the model.
 The app.py file loads the saved model and uses it for predictions within a Tkinter GUI.
 
-**Example**
+## Example
 Open the application.
 Enter an email message in the provided text box.
 Click "Classify" to see if the email is spam or ham.
